@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+
+<replacements>
+  <replacement key="get" scope="1" mode="0">Retorna o valor</replacement>
+  <replacement key="set" scope="1" mode="0">Define o novo valor</replacement>
+  <replacement key="add" scope="1" mode="0">Adiciona um novo valor</replacement>
+  <replacement key="edit" scope="1" mode="0">Edita o valor</replacement>
+  <replacement key="remove" scope="1" mode="0">Remove o valor</replacement>
+  <replacement key="init" scope="1" mode="0">Inicializar</replacement>
+  <replacement key="parse" scope="1" mode="0">Parser o valor</replacement>
+  <replacement key="create" scope="1" mode="0">Criar um </replacement>
+  <replacement key="build" scope="1" mode="0">Monta o</replacement>
+  <replacement key="is" scope="1" mode="0">Verifica se o valor</replacement>
+  <replacement key="print" scope="1" mode="0">Printa o valor</replacement>
+  <replacement key="has" scope="1" mode="0">Verifica se possuiu</replacement>
+  <replacement key="Transformer" scope="1" mode="0">Transformar para</replacement>
+  <replacement key="Abstract" scope="1" mode="0">Abstra&#231;&#227;o</replacement>
+  <replacement key="Exception" scope="1" mode="0">Exce&#231;&#227;o</replacement>
+  <replacement key="transform" scope="1" mode="0">Transforma</replacement>
+  <replacement key="BO" scope="1" mode="0">'Business Object' (Objecto de neg&#243;cio)</replacement>
+  <replacement key="VO" scope="1" mode="0">'Value Object' (Objeto de valor)</replacement>
+  <replacement key="TO" scope="1" mode="0">'Transfer Object' (Objeto de Transfer&#234;ncia)</replacement>
+  <replacement key="DTO" scope="1" mode="0">'Data transfer object' (Objeto de Transfer&#234;ncia de Dados)</replacement>
+</replacements>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="_mToString_ex">    ${:import(br.com.riachuelo.fincliente.core.util.ToStringUtils)}&#13;
+    @Override&#13;
+    public String toString() {&#13;
+        return ToStringUtils.toString(this);&#13;
+    }</template></templates>

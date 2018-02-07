@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="_mEquals">${:import(br.com.riachuelo.fincliente.core.util.ObjectEqualsUtils,org.apache.commons.lang.builder.EqualsBuilder)}&#13;
+@Override&#13;
+public boolean equals(Object obj) {&#13;
+	if(ObjectEqualsUtils.isEquals(this, obj)&#13;
+		&amp;&amp; obj instanceof ${enclosing_type}){&#13;
+		EqualsBuilder builder = new EqualsBuilder();&#13;
+		${enclosing_type} o = (${enclosing_type}) obj;&#13;
+		builder.append(this.${field}, o.${field});&#13;
+		return builder.isEquals();&#13;
+	}else{&#13;
+		return false;&#13;
+	}&#13;
+}</template></templates>

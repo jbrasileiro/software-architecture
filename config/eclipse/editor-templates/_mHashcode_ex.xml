@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="_mHashcode_ex">${:import(&#13;
+org.apache.commons.lang3.builder.HashCodeBuilder&#13;
+)}&#13;
+@Override&#13;
+public int hashCode() {&#13;
+    ${builderType:newType(HashCodeBuilder)} builder = new ${builderType}();&#13;
+    builder.append(${field:field(1)})&#13;
+	builder.append(${field2:field})&#13;
+	builder.append(${field3:field})&#13;
+	builder.append(${field4:field})&#13;
+	builder.append(${field5:field})&#13;
+	builder.append(${field6:field})&#13;
+	builder.append(${field7:field})&#13;
+	builder.append(${field8:field})&#13;
+	builder.append(${field9:field})&#13;
+	builder.append(${field10:field})&#13;
+	builder.append(${field11:field})&#13;
+	builder.append(${field12:field})&#13;
+	builder.append(${field13:field})&#13;
+	builder.append(${field14:field})&#13;
+	builder.append(${field15:field})&#13;
+	builder.append(${field16:field})&#13;
+	builder.append(${field17:field})&#13;
+	builder.append(${field18:field})&#13;
+	builder.append(${field19:field})&#13;
+	builder.append(${field20:field})&#13;
+    return ${builder}.hashCode();&#13;
+}</template></templates>

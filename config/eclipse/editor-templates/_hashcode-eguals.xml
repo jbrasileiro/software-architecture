@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="_x2_hash_and_equals">${:import(org.apache.commons.lang.builder.HashCodeBuilder,br.com.riachuelo.fincliente.core.util.ObjectEqualsUtils,org.apache.commons.lang.builder.EqualsBuilder)}&#13;
+@Override&#13;
+public int hashCode() {&#13;
+    ${builderType:newType(HashCodeBuilder)} ${builder:newName(builderType)} = new ${builderType}();&#13;
+    ${builder}.append(${field});${cursor}&#13;
+    return ${builder}.hashCode();&#13;
+}&#13;
+&#13;
+@Override&#13;
+public boolean equals(Object obj) {&#13;
+	if(ObjectEqualsUtils.isEquals(this, obj)){&#13;
+		EqualsBuilder builder = new EqualsBuilder();&#13;
+		${type} o = (${type}) obj;&#13;
+		builder.append(this.${field}, o.${field});&#13;
+		return builder.isEquals();&#13;
+	}else{&#13;
+		return false;&#13;
+	}&#13;
+}&#13;
+</template></templates>

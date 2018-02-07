@@ -1,0 +1,66 @@
+Checkstyle
+ - external configuration:
+ -- C:\.dev\eclipse-conf\checkstyle\checkstyle-rules.xml
+Findbugs
+ - external configuration:
+ -- C:\.dev\eclipse-conf\findbugs\findbugs-preferences-2017-02-21.epf
+JAutoDoc
+JAVA
+-CODE STYLE
+--CLEAN UP
+---C:\.dev\eclipse-conf\custom-clean-up.xml
+Qualify accesses to static fields with declaring class
+Qualify accesses to static methods with declaring class
+Change non static accesses to static members using declaring type
+Change indirect accesses to static members to direct accesses (accesses through subtypes)
+Convert control statement bodies to block
+Convert 'for' loops to enhanced 'for' loops
+Add final modifier to private fields
+Add final modifier to method parameters
+Use lambda where possible
+Remove unnecessary parentheses
+Remove unused imports
+Remove unused private methods
+Remove unused private constructors
+Remove unused private types
+Remove unused private fields
+Remove unused local variables
+Add missing '@Override' annotations
+Add missing '@Override' annotations to implementations of interface methods
+Add missing '@Deprecated' annotations
+Add missing serial version ID (generated)
+Remove unnecessary casts
+Remove unnecessary '$NON-NLS$' tags
+Organize imports
+Remove trailing white spaces on all lines
+Remove redundant type arguments
+Add file header (JAutodoc)
+--CODE TEMPLATES
+---C:\.dev\eclipse-conf\custom-templates.xml
+--FORMATTER
+---C:\.dev\eclipse-conf\custom-code-formatter.xml
+-EDITOR
+---SAVE ACTIONS
+----[x] Performance the selected actions on save
+-----[x]Organize imports
+-----Aditional actions
+Qualify accesses to static fields with declaring class
+Qualify accesses to static methods with declaring class
+Change non static accesses to static members using declaring type
+Change indirect accesses to static members to direct accesses (accesses through subtypes)
+Add final modifier to private fields
+Add final modifier to method parameters
+Use lambda where possible
+Remove unused imports
+Add missing '@Override' annotations
+Add missing '@Deprecated' annotations
+Remove unnecessary casts
+Remove unnecessary '$NON-NLS$' tags
+Remove redundant type arguments
+---TEMPLATES
+----C:\.dev\eclipse-conf\editor-templates\editor-templates-all.xml
+---TYPING
+----[x] semicolons
+----[x] Braces
+
+
