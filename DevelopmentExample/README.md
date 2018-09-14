@@ -94,8 +94,6 @@ For any JAVA library always define the fellowings:
  mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.3 -DgroupId=jbrasileiro.dev.ex -DartifactId=example-library -Dversion=1.0-SNAPSHOT -Dpackage=ex.lib -DinteractiveMode=false
 ```
 
-
- 
  Important points:
  - unique package for project/module:
  
@@ -108,16 +106,21 @@ For any JAVA library always define the fellowings:
  - project.build.sourceEncoding
  - project.reporting.outputEncoding
  - java.version
+  or 
+ - maven.compiler.source
+ - maven.compiler.target
  
  Ex:
  ```
  	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+	
  ```
 _________
 
-#REFERENCE:
+# REFERENCE:
 - **Lorem Ipsum Generator** : https://loremipsum.io/generator/?n=5&t=s
