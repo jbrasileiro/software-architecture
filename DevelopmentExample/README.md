@@ -83,9 +83,27 @@ COPY %vFILE_GITIGNORE% %vDIR_CURRENT%\example-parent\.gitignore
 
 ## 4 - pom.xml
 
+### 4.1 Property
 For any JAVA library always define the fellowings:
 
-### 4.1 Property
+ - Uses the Apache Maven to create archetype:
+
+```
+ mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.3 -DgroupId=jbrasileiro.dev.ex -DartifactId=development-example -Dversion=1.0-SNAPSHOT -Dpackage=jbrasileiro.example -DinteractiveMode=false
+ 
+ mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.3 -DgroupId=jbrasileiro.dev.ex -DartifactId=example-library -Dversion=1.0-SNAPSHOT -Dpackage=ex.lib -DinteractiveMode=false
+```
+
+
+ 
+ Important points:
+ - unique package for project/module:
+ 
+ * any-name-example-lib  : example.lib
+ * any-name-example-core : example.core
+ * any-name-example-web  : example.web
+
+### 4.2 Property
 
  - project.build.sourceEncoding
  - project.reporting.outputEncoding
