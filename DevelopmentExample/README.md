@@ -120,6 +120,10 @@ For any JAVA library always define the fellowings:
 	</properties>
 	
  ```
+ 
+ # Unit test 
+ 
+ see comments in ex.lib.v01.ExampleTest.
 _________
 
 # REFERENCE:
