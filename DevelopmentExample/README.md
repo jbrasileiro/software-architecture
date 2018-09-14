@@ -80,7 +80,10 @@ COPY %vFILE_GITIGNORE% %vDIR_CURRENT%\example-MS-SA\.gitignore
 COPY %vFILE_GITIGNORE% %vDIR_CURRENT%\example-MS-JEE\.gitignore
 COPY %vFILE_GITIGNORE% %vDIR_CURRENT%\example-parent\.gitignore
 ```
-______________
+
+## 4 - pom.xml
+
+_________
 
 #REFERENCE:
 - **Lorem Ipsum Generator** : https://loremipsum.io/generator/?n=5&t=s
