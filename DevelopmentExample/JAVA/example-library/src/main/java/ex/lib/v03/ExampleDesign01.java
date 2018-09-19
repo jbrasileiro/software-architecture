@@ -6,9 +6,9 @@ import java.util.Locale;
 
 import ex.lib.CustomGeneralFormatter;
 
-public class Example {
+public class ExampleDesign01 {
 
-    private static final String PATTERN_TIME_FULL = new CustomGeneralFormatter().formatDatePattern();
+    private static final String FULL = new CustomGeneralFormatter().formatDatePattern();
 
     public String toString(
         final Long number) {
@@ -24,6 +24,14 @@ public class Example {
     }
 
     private String formatDate() {
-        return new SimpleDateFormat(PATTERN_TIME_FULL, Locale.getDefault()).format(new Date());
+        return new SimpleDateFormat(FULL, Locale.getDefault()).format(date());
+    }
+
+    /**
+     * move to a protected method in order to overide it in testing.
+     * @return
+     */
+    protected Date date() {
+        return new Date();
     }
 }
