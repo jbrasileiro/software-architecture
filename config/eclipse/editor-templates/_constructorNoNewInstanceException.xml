@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="_constructorNoNewInstanceException">private ${enclosing_type}(){&#13;
+	super();&#13;
+	throw new NoNewInstanceAllowed(this.getClass());&#13;
+}</template></templates>
