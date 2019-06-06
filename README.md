@@ -3,7 +3,7 @@
 JAVA_HOME
 MAVEN_HOME
 
-eclipse:
+- eclipse:
  - intall Darkest Dark theme.
  - eclipse.ini
  - configure eclipse settings.
@@ -12,7 +12,26 @@ eclipse:
  -- add Maven installation.
  -- configure settings.
  -- set MAVEN_OPTS=-Xmx1024m -XX:MaxPermSize=1024m
- - GIT
+ - JAVA>Editor>Save Actions
+ -- add Additional actions:
+	- Convert control statement bodies to block
+	- Convert 'for' loops to enhanced 'for' loops
+	- Add final modifier to private fields
+	- Add final modifier to method parameters
+	- Add final modifier to local variables
+	- Use lambda where possible
+	- Remove unnecessary parentheses
+	- Remove unused imports
+	- Add missing '@Override' annotations
+	- Add missing '@Override' annotations to implementations of interface methods
+	- Add missing '@Deprecated' annotations
+	- Remove unnecessary casts
+	- Remove redundant modifiers
+	- Remove redundant semicolons
+	- Remove trailing white spaces on all lines
+	- Remove redundant type arguments
+ 
+- GIT
  -- configure user settings (e-mail)
  
  
