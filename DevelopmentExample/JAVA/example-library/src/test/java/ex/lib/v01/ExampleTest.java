@@ -3,7 +3,7 @@
  *  - ex.lib.v01.Example
  *  - ex.lib.v01.ExampleTest
  *
- * Unit Test class should match one of the fellowing convertion:
+ * Unit Test class should match one of the fellowing convention:
  *  - end with 'Test'. ex: ExampleTest
  *  - start with Test. ex: TestExample
  *
@@ -22,7 +22,7 @@ public class ExampleTest {
     private Example example;
 
     /*
-     * Uses @Before to unsure the initial state, it will be executed before each @Test method.
+     * Uses @Before to ensure the initial state, it will be executed before each @Test method.
      */
     @Before
     public void setup() {
@@ -31,7 +31,7 @@ public class ExampleTest {
     }
 
     /*
-     * Uses @After to unsure the initial state, it will be executed after each @Test method.
+     * Uses @After to ensure the initial state, it will be executed after each @Test method.
      */
     @After
     public void cleanUp() {
