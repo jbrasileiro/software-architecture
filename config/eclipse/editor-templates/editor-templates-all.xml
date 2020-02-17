@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="_constructorNoNewInstance">private ${enclosing_type}(){&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="java" deleted="false" description="add logger (slf4j) as constant" enabled="true" name="_add_logger">${:import(&#13;
+ org.slf4j.Logger,&#13;
+ org.slf4j.LoggerFactory&#13;
+)}&#13;
+private static final Logger LOGGER = LoggerFactory.getLogger(${enclosing_type}.class);</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="_constructorNoNewInstance">private ${enclosing_type}(){&#13;
 	super();&#13;
 	throw new IllegalStateException("No new instance allowed for ".concat(${enclosing_type}.class.getName()));&#13;
 }</template><template autoinsert="true" context="java" deleted="false" description="" enabled="true" name="_constructorNoNewInstanceException">private ${enclosing_type}(){&#13;
@@ -257,7 +261,7 @@ ${item}.setHeight(${control}.computeSize(SWT.DEFAULT, SWT.DEFAULT).y);</template
 ${layoutData}.widthHint= ${width:link(SWT.DEFAULT)};
 ${layoutData}.heightHint= ${height:link(SWT.DEFAULT)};
 ${parent:var(org.eclipse.swt.widgets.Control)}.setLayoutData(${layoutData});
-${imp:import(org.eclipse.swt.SWT)}${cursor}</template><template autoinsert="false" context="swt-statements" deleted="false" description="using GridDataFactory for a Control" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.swt.griddatafactory" name="GridDataFactory">GridDataFactory.fillDefaults().grab(true, false).applyTo(${parent:var(org.eclipse.swt.widgets.Control)});
+${imp:import(org.eclipse.swt.SWT)}${cursor}</template><template autoinsert="false" context="swt-statements" deleted="false" description="using GridDataFactory for a Control" enabled="true" name="GridDataFactory">GridDataFactory.fillDefaults().grab(true, false).applyTo(${parent:var(org.eclipse.swt.widgets.Control)});
 ${imp:import(org.eclipse.jface.layout.GridDataFactory)}${cursor}</template><template autoinsert="false" context="swt-statements" deleted="false" description="new GridLayout for a Composites" enabled="true" id="org.eclipse.jdt.ui.text.codetemplates.swt.gridlayout" name="GridLayout">${gridLayout:newType(org.eclipse.swt.layout.GridLayout)} ${layout:newName(org.eclipse.swt.layout.GridLayout)} = new ${gridLayout}(${columns:link(1, 2, 3, 4, 5)}, ${width:link(false, true)});
 ${layout}.marginWidth = ${marginW:link(5, 0)};
 ${layout}.marginHeight = ${marginH:link(5, 0)};
@@ -408,9 +412,7 @@ while (!${shell}.isDisposed()) {
 	if (!${display}.readAndDispatch ()) 
 		${display}.sleep();
 }
-${display}.dispose();</template><template autoinsert="false" context="java" deleted="false" description="create new object" enabled="true" id="org.eclipse.jdt.ui.templates.new" name="new">${type} ${name} = new ${type}(${});</template><template autoinsert="false" context="module" deleted="false" description="create module declaration" enabled="true" id="org.eclipse.jdt.ui.templates.new_module" name="new_module">module ${name} {
-	${cursor}
-}</template><template autoinsert="false" context="java" deleted="false" description="non-externalized string marker" enabled="true" id="org.eclipse.jdt.ui.templates.non-nls" name="nls">//$$NON-NLS-${N}$$</template><template autoinsert="true" context="javadoc" deleted="false" description="&lt;code&gt;null&lt;/code&gt;" enabled="true" id="org.eclipse.jdt.ui.templates.code_tag_null" name="null">&lt;code&gt;null&lt;/code&gt;</template><template autoinsert="false" context="java-members" deleted="false" description="private method" enabled="true" id="org.eclipse.jdt.ui.templates.private_method" name="private_method">private ${return_type} ${name}(${}) {
+${display}.dispose();</template><template autoinsert="false" context="java" deleted="false" description="create new object" enabled="true" id="org.eclipse.jdt.ui.templates.new" name="new">${type} ${name} = new ${type}(${});</template><template autoinsert="false" context="java" deleted="false" description="non-externalized string marker" enabled="true" id="org.eclipse.jdt.ui.templates.non-nls" name="nls">//$$NON-NLS-${N}$$</template><template autoinsert="true" context="javadoc" deleted="false" description="&lt;code&gt;null&lt;/code&gt;" enabled="true" id="org.eclipse.jdt.ui.templates.code_tag_null" name="null">&lt;code&gt;null&lt;/code&gt;</template><template autoinsert="false" context="java-members" deleted="false" description="private method" enabled="true" id="org.eclipse.jdt.ui.templates.private_method" name="private_method">private ${return_type} ${name}(${}) {
 	${cursor}
 }</template><template autoinsert="false" context="java-members" deleted="false" description="private static method" enabled="true" id="org.eclipse.jdt.ui.templates.private_static_method" name="private_static_method">private static ${return_type} ${name}(${}) {
 	${cursor}
