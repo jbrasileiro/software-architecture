@@ -1,0 +1,1 @@
+dir %CUSTOM_BAT_HOME%
