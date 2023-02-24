@@ -1,0 +1,26 @@
+   
+
+## Modelagem de Domínio para Desenvolvedores
+
+O capítulo começa explicando que a modelagem de domínio é uma abordagem para a construção de software que se concentra na compreensão profunda do domínio do problema que está sendo resolvido, e que essa compreensão deve ser compartilhada por todas as pessoas envolvidas no projeto, incluindo desenvolvedores, analistas de negócios e especialistas no domínio.
+
+O autor destaca que a modelagem de domínio é uma disciplina complexa e multifacetada, que requer o uso de diversas técnicas e ferramentas, tais como entrevistas com especialistas, diagramas de classe e de sequência, prototipagem, entre outras. Além disso, ele enfatiza que a modelagem de domínio deve ser vista como uma atividade iterativa e colaborativa, que envolve constantes revisões e ajustes ao longo do tempo.
+
+Por fim, o capítulo introduz alguns dos conceitos fundamentais do DDD, tais como entidades, objetos de valor, agregados e serviços de domínio, e explica como esses conceitos se relacionam entre si e com a modelagem de domínio como um todo.
+
+Em resumo, o primeiro capítulo do livro "Implementando Domain-Driven Design" estabelece as bases para a compreensão da importância da modelagem de domínio e da prática do DDD, fornecendo uma visão geral dos principais conceitos e técnicas utilizados nesse contexto.
+
+    Entidades: Entidades são objetos que possuem uma identidade única e que têm um ciclo de vida mais longo do que uma simples operação. Por exemplo, em um sistema de gerenciamento de estoque, um produto pode ser uma entidade, pois possui um código único, um conjunto de atributos (como nome, descrição, preço, etc.) e uma série de operações que podem ser realizadas com ele (como adicionar ou remover unidades do estoque, atualizar informações, etc.).
+    
+    Objetos de valor: Objetos de valor são objetos que representam conceitos abstratos e que são usados para descrever ou quantificar outras entidades ou objetos de valor. Por exemplo, em um sistema de vendas online, um endereço de entrega pode ser um objeto de valor, pois é composto por um conjunto de informações (rua, número, bairro, cidade, estado, país, etc.) que não possuem uma identidade única e que não fazem sentido por si só.
+    
+    Agregados: Agregados são grupos de objetos que são tratados como uma única unidade, e que possuem uma raiz de agregado que controla o acesso e a consistência do agregado como um todo. Por exemplo, em um sistema de e-commerce, um pedido de compra pode ser um agregado, que contém informações sobre o cliente que fez o pedido, os produtos que foram comprados, o endereço de entrega, o valor total, etc.
+   
+    Serviços de domínio: Serviços de domínio são objetos que encapsulam operações que não pertencem naturalmente a uma única entidade ou agregado, mas que são importantes para o domínio do problema que está sendo resolvido. Por exemplo, em um sistema de gerenciamento de logística, um serviço de rastreamento pode ser criado para permitir que os usuários acompanhem a localização e o status dos seus pedidos em tempo real.
+    
+    
+    Bounded Contexts: Um Bounded Context é uma delimitação lógica do domínio em um sistema. Ele é composto por um conjunto de entidades, objetos de valor, agregados e serviços de domínio que estão relacionados entre si e que têm uma semântica clara dentro do contexto em que estão inseridos. Por exemplo, em um sistema de comércio eletrônico, pode-se ter um Bounded Context para o processo de vendas (que inclui informações sobre produtos, pedidos, clientes, etc.) e outro para o processo de logística (que inclui informações sobre envio, rastreamento, entregas, etc.).
+
+    Context Mapping: Context Mapping é uma técnica para identificar e gerenciar os relacionamentos entre diferentes Bounded Contexts em um sistema. Isso é importante porque muitas vezes diferentes partes de um sistema precisam compartilhar informações e colaborar entre si, mas isso pode ser complicado devido às diferenças semânticas e conceituais entre os contextos. Por exemplo, pode-se usar um padrão de integração como o Shared Kernel para compartilhar entidades e objetos de valor entre diferentes Bounded Contexts, ou usar um padrão de comunicação como o Customer/Supplier para definir as responsabilidades e expectativas entre contextos diferentes.
+
+    Eventos de Domínio: Eventos de Domínio são notificações que são geradas quando ocorre uma mudança importante no estado de uma entidade ou agregado. Eles são usados para garantir a consistência e a integridade do domínio, permitindo que outros objetos ou sistemas possam reagir a essas mudanças e tomar ações apropriadas. Por exemplo, em um sistema de gerenciamento de estoque, pode-se gerar um evento de "Produto esgotado" quando a quantidade em estoque de um determinado produto chega a zero, permitindo que outros sistemas (como o sistema de compras) sejam notificados e tomem ações para repor o estoque.
